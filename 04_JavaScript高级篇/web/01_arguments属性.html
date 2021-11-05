@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+       <script type="text/javascript">
+
+           function fun1(p1,p2){
+               window.alert("fun1 is run...");
+           }
+
+           //三处调用，那几处能够调用成功：都可以正常调用fun1
+           // fun1();
+           // fun1(10);
+           // fun1(10,20);
+           //问题：fun1(),fun1(10,20)调用时传递实参与fun1声明时指定形参个数并不匹配，为什么还能正常调用
+
+
+           //声明一个函数，证明arguments存在
+           // function fun2(){
+           //     window.alert("fun2在运行时得到实参个数 "+arguments.length);
+           //     for(var i=0;i<arguments.length;i++){
+           //             var param = arguments[i];
+           //             window.alert("第 "+(i+1)+"个实参的值 = "+param+" 实参数据类型 "+typeof param);
+           //     }
+           // }
+
+           //测试
+           //fun2(10,"abc", new Date());
+
+           //JavaScript中函数重载：当一个函数接收到不同参数时，能提供不同的功能
+           //当fun3接收到一个string类型实参，体现say hello。接收到两个number类型实参，体现加法运算
+           function fun3(){
+               if(arguments.length ==1 &&  typeof  arguments[0] == 'string'){
+                   window.alert("Hello "+arguments[0])
+               }else if(arguments.length ==2 && typeof arguments[0] == 'number' && typeof arguments[1] =='number'){
+                   var num3 = arguments[0] + arguments[1];
+                   window.alert("数字 "+arguments[0]+" + "+arguments[1]+" = "+num3);
+               }
+               // typeof obj  == obj.getClass().getName();
+           }
+
+           //测试
+           //fun3("mike");
+           fun3(80,90)
+       </script>
+</body>
+</html>

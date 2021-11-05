@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+   <script type="text/javascript">
+
+       //标准函数对象声明方式
+       function fun1(){
+           window.alert("fun1 is run....")
+       }
+       //匿名方式声明函数对象
+       var fun2 = function (p1,p2,p3){ window.alert("fun2 is run...")}
+
+       //函数在调用时，必须通过关联【函数对象】来进行调用处理
+       fun1();
+       fun2();
+   </script>
+
+</body>
+</html>

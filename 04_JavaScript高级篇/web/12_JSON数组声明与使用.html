@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        //存放多个城市对象（cityId, cityName）
+
+        var jsonArray = [
+                            {"cityId":1,"cityName":"北京市"},
+                            {"cityId":2,"cityName":"上海市"},
+                            {"cityId":3,"cityName":"广州市"}
+                         ];
+
+        for(var i=0;i<jsonArray.length;i++){
+                  var cityObj =  jsonArray[i];
+                  window.alert("城市编号 "+cityObj.cityId+" 城市名称 "+cityObj.cityName)
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

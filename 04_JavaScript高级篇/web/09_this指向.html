@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        //全局变量
+        var sname="allen"
+        //全局变量  window.Student = function(){};
+        function Student(){
+            this.sid =100;
+            this.sname="mike";
+        }
+
+        // Student(); //普通函数身份,window.Student(). this--->window this.sname="mike"
+        // window.alert("window.sname = "+window.sname);//？？？？
+
+        var obj = new Student();
+        window.alert("window.sname = "+window.sname);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

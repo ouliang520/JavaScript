@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        // var obj1 = new Object(); //JavaScript内置构造函数
+        // //新增属性
+        // obj1.sid = 10;
+        // obj1.sname = "mike"
+        // //新增函数
+        // obj1.sayHello = function (param){ window.alert(obj1.sname+"向"+param+"问好")}
+        //
+        // window.alert("obj1.sid = "+obj1.sid +" obj1.sname = "+obj1.sname);
+        // obj1.sayHello("allen")
+
+
+
+        var obj2 = new Object();
+        //obj2["deptNo"]=20;
+        //window.alert("obj2.deptNo "+obj2.deptNo);
+
+        var departName ="dname";
+        obj2[departName]="Operation"; // obj2.dname = "Operation";
+        window.alert("obj2.dname = "+obj2.dname);
+
+        //移除dname属性
+
+        delete  obj2.dname;
+        window.alert("obj2.dname = "+obj2.dname);//undefined
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

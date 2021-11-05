@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+
+        function fun1(){
+            return "abc";
+        }
+
+        //将fun1作为【普通函数】进行调用
+        // var num1 = fun1();
+        // window.alert("num1 = "+num1+"  数据类型 "+typeof num1);
+
+        //将fun1作为【构造函数】进行调用
+        var num2 = new fun1(); //函数作为构造函数调用时，内部return直接失效
+        window.alert("num2 = "+num2+"  数据类型 "+typeof num2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
