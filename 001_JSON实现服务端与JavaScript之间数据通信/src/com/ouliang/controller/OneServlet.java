@@ -11,6 +11,7 @@ public class OneServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 student stu =new student();
 request.setAttribute("key",stu);
+request.getRequestDispatcher("/index_.jsp").forward(request,response);
     }
 
     @Override
