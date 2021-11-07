@@ -7,9 +7,7 @@
         <element id="directory" name="classes">
           <element id="module-output" name="001_JSON实现服务端与JavaScript之间数据通信" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="application" name="lib" />
-        </element>
+        <element id="directory" name="lib" />
       </element>
     </root>
   </artifact>

@@ -9,6 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/04_JavaScript高级篇/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
     <facet type="web" name="Web3">
@@ -19,6 +20,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/01—初识JavaScript/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
     <facet type="web" name="Web2">
@@ -29,6 +31,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/02_JavaScript语法入门/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
     <facet type="web" name="Web4">
@@ -39,6 +42,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/03_JavaScript应用篇/web" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -50,5 +54,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="application" />
+    <orderEntry type="library" name="commons-beanutils-1.8.3" level="application" />
   </component>
 </module>

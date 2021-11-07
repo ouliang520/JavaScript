@@ -11,7 +11,7 @@
     <title>Title</title>
     <script type="text/javascript">
         var stuObj =${requestScope.key};//从request作用域中得到学生对象
-        window.alert("学生编号 "+stuObj.sid+"学生姓名 "+stuObj.sname)
+        window.alert("学生编号 "+stuObj.sid+" 学生姓名 "+stuObj.sname)
     </script>
 </head>
 <body>
